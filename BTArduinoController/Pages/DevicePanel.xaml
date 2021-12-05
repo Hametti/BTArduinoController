@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BTArduinoController.Pages.DevicePanel">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button 
+                    Grid.Column="0" Grid.Row="0"
+                    x:Name="btnSendA" Text="Send a" Clicked="btnSendA_Clicked" MinimumHeightRequest="100"/>
+                <Button 
+                    Grid.Column="0" Grid.Row="1"
+                    x:Name="btnSendB" Text="Send b" Clicked="btnSendB_Clicked" MinimumHeightRequest="100"/>
+                <Button 
+                    Grid.Column="0" Grid.Row="2"
+                    x:Name="btnConnect" Text="Connect" Clicked="btnConnect_Clicked" MinimumHeightRequest="100"/>
+                <Button 
+                    Grid.Column="0" Grid.Row="3"
+                    x:Name="btnDisconnect" Text="Disconnect" Clicked="btnDisconnect_Clicked" MinimumHeightRequest="100"/>
+                <Button 
+                    Grid.Column="0" Grid.Row="4"
+                    x:Name="btnCheckStatus" Text="Connection status" Clicked="btnCheckStatus_Clicked" MinimumHeightRequest="100"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

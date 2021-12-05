@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTArduinoController.Android", "BTArduinoController.Android\BTArduinoController.Android.csproj", "{E58D9C64-ADB2-4420-AEC1-55F5327DE7C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTArduinoController", "BTArduinoController\BTArduinoController.csproj", "{4B519735-3CBC-4B30-950A-A3CDB9ADF733}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E58D9C64-ADB2-4420-AEC1-55F5327DE7C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E58D9C64-ADB2-4420-AEC1-55F5327DE7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E58D9C64-ADB2-4420-AEC1-55F5327DE7C2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E58D9C64-ADB2-4420-AEC1-55F5327DE7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E58D9C64-ADB2-4420-AEC1-55F5327DE7C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E58D9C64-ADB2-4420-AEC1-55F5327DE7C2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4B519735-3CBC-4B30-950A-A3CDB9ADF733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B519735-3CBC-4B30-950A-A3CDB9ADF733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B519735-3CBC-4B30-950A-A3CDB9ADF733}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4B519735-3CBC-4B30-950A-A3CDB9ADF733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B519735-3CBC-4B30-950A-A3CDB9ADF733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B519735-3CBC-4B30-950A-A3CDB9ADF733}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F8D7AC0-D40C-49A7-8566-8BEA931F9D50}
+	EndGlobalSection
+EndGlobal
