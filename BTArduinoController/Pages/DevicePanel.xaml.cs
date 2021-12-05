@@ -48,7 +48,7 @@ namespace BTArduinoController.Pages
             }
             catch (Exception e)
             {
-                CallAlert("Error", $"Exception: {e.Message}", "Ok");
+                CallAlert("Error", $"Can't connect. Make sure bluetooth device is nearby.", "Ok");
                 ButtonsDisconnectedState();
             }
             finally
@@ -130,7 +130,7 @@ namespace BTArduinoController.Pages
             }
             catch (Exception e)
             {
-                await DisplayAlert("Error", $"Connection error - {e.Message}", "Ok");
+                await DisplayAlert("Error", $"Can't connect. Make sure bluetooth device is nearby.", "Ok");
                 ButtonsDisconnectedState();
             }
             finally
