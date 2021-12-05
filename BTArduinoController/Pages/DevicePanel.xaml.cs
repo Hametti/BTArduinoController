@@ -28,8 +28,14 @@ namespace BTArduinoController.Pages
             Disconnect();
         }
 
+        void ConnectingMessageState(bool state)
+        {
+            var connectingMessage = ((Label)FindByName("ConnectingMessage")).IsVisible = state;
+        }
+
         private async void Initialize()
         {
+            ConnectingMessageState(true);
             MakeButtonsInvisible();
             try
             {
@@ -44,6 +50,10 @@ namespace BTArduinoController.Pages
             {
                 CallAlert("Error", $"Exception: {e.Message}", "Ok");
                 ButtonsDisconnectedState();
+            }
+            finally
+            {
+                ConnectingMessageState(false);
             }
         }
 
@@ -111,6 +121,7 @@ namespace BTArduinoController.Pages
         }
         private async void Connect()
         {
+            ConnectingMessageState(true);
             ButtonsConnectedState();
             try
             {
@@ -121,6 +132,10 @@ namespace BTArduinoController.Pages
             {
                 await DisplayAlert("Error", $"Connection error - {e.Message}", "Ok");
                 ButtonsDisconnectedState();
+            }
+            finally
+            {
+                ConnectingMessageState(false);
             }
         }
         private async void Disconnect()
